@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos tomada de plantilla -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <!-- Familia de fuentes tomadas de Google Fonts y CloudFire -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icono en pestaña de navegador personalizado -->
+    <link rel="icon" href="../media/img/canada-flag-round-icon-16.png" type="image/x-icon">
+    <title>Actividades</title>
+</head>
+
+<!-- Se aplican las etiquetas de HTML semántico para identificar mejor las secciones-->
+
+<body>
+    <script>
+        /* Función para poder usar el menú de navegación en pantallas pequeñas */
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <nav>
+        <!-- Barra de navegación para pantalla grandes -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
+                <a href="place.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espacio</a>
+                <a href="characters.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Personajes</a>
+                <a href="activities.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Actividades</a>
+                <a href="history.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Historia</a>
+                <a href="credits.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Créditos</a>
+            </div>
+
+            <!-- Barra de navegación para pantalla pequeñas -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="place.html" class="w3-bar-item w3-button w3-padding-large">Espacio</a>
+                <a href="characters.html" class="w3-bar-item w3-button w3-padding-large">Personajes</a>
+                <a href="activities.html" class="w3-bar-item w3-button w3-padding-large">Actividades</a>
+                <a href="history.html" class="w3-bar-item w3-button w3-padding-large">Historia</a>
+                <a href="credits.html" class="w3-bar-item w3-button w3-padding-large">Créditos</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Submenú para ver los elementos internos de la página -->
+    <div class="w3-main w3-container w3-center w3-red w3-card w3-bar">
+        <h2 class="w3-large">Temas</h2>
+        <ul class="w3-ul w3-transparent">
+            <a href="#CN_Tower" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Torre CN</li>
+            </a>
+            <a href="#Pancake" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Pancake</li>
+            </a>
+            <a href="#Niagara" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Cataratas del Niágara</li>
+            </a>
+            <a href="#Poutine" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Poutine</li>
+            </a>
+        </ul>
+    </div>
+    <!-- Formato contenido foto izquierda y encima en pantallas pequeñas-->
+    <div id="CN_Tower" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-third">
+                <figure>
+                    <a href="https://www.cntower.ca/en-ca/home.html" target="_blank" title="Clic para saber más"><img
+                            class="w3-image" src="../media/img/CN_Tower.jpg" alt="CN Tower" width="250px">
+                    </a>
+                </figure>
+            </div>
+            <div class="w3-twothird">
+                <h1>Subir a la cima de la Torre CN en Toronto</h1>
+                <p class="w3-padding-32 w3-justify">Esta torre también es conocida como la <strong>Torre Oficial de
+                        Canadá</strong>.
+                    Tiene una altura de 447 metros y es el símbolo de la ciudad de Toronto. Fue construida para permitir
+                    una mayor difusión de las ondas de la radio y es el tercer edificio más grande del mundo. En él,
+                    se puede acceder a la plataforma más alta con ascensores en cristal y desde allí, se puede admirar
+                    una vista panorámica sobre la ciudad y el suelo gracias a un suelo de cristal. ¡Se te corta hasta la
+                    respiración!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto derecha y abajo en pantallas pequeñas -->
+    <div id="Pancake" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Probar los pancakes con jarabe de arce</h1>
+                <p class="w3-padding-32">El nombre de estas deliciosas crepas viene del inglés <strong>pan</strong> =
+                    <i>sartén</i> y <strong>cake</strong>
+                    = <i>dulce</i>. Es una receta típica en América del Norte que a veces se les llaman <strong>crepas
+                        americanas</strong> en
+                    Québec pero su origen es germánico. Son pequeños y bastante altas y se comen en el desayuno,
+                    acompañadas con jarabe de arce, huevos y panceta. <i>Bon appétit!</i></p>
+            </div>
+            <div class="w3-third">
+                <figure>
+                    <a href="https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/" target="_blank"
+                        title="Clic para saber más"><img class="w3-image" src="../media/img/Pancakes.jpg" alt="Pancake"
+                            width="400px">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto izquierda y encima en pantallas pequeñas-->
+    <div id="Niagara" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-third">
+                <figure>
+                    <a href="https://es.wikipedia.org/wiki/Cataratas_del_Ni%C3%A1gara" target="_blank"
+                        title="Clic para saber más"><img class="w3-image"
+                            src="../media/img/Niagara_Roux_de_Rochelle.jpg" alt="Cataratas del Niágara" height="300px">
+                    </a>
+                </figure>
+            </div>
+            <div class="w3-twothird">
+                <h1>Sentirse pequeño frente a las cataratas del Niágara</h1>
+                <p class="w3-padding-32 w3-justify"><i>Las cataratas del Niágara</i> es un conjunto de tres caídas de
+                    agua
+                    que unen las fronteras americana y canadiense. No son muy altas <i>(57 metros)</i> pero sí tienen
+                    una muy
+                    fuerte caída que las convierte en las más conocidas y visitadas del mundo. También representan una
+                    fuente de energía hidráulica muy importante. ¿Nuestra recomendación? Realizar un crucero tradicional
+                    en barco a los pies de las cataratas, y después pasear y descubrir los pequeños caminos que hay para
+                    montar en bicicleta. La visita a las cataratas del Niágara es una de las actividades imprescindibles
+                    que todos te indicarán al preguntar qué hacer en Canadá.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto derecha y abajo en pantallas pequeñas -->
+    <div id="Poutine" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Olvidarte de la dieta para probar una Poutine</h1>
+                <h5 class="w3-padding-32">La <strong>Poutine</strong> es una comida típica de Québec compuesta por patatas fritas y
+                    cheddar. Se acompaña con una salsa sabor barbacoa caliente que hace que el queso se funda. Tiene su
+                    origen en los años 50 y fue muy consumida en las regiones rurales donde el invierno es muy duro.
+                    <i>¡Está deliciosa!</i></h5>
+            </div>
+            <div class="w3-third">
+                <figure>
+                    <a href="https://www.allrecipes.com/recipe/79300/real-poutine/" target="_blank"
+                        title="Clic para saber más"><img class="w3-image" src="../media/img/Poutine.jpg"
+                            alt="Poutine" width="400px">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container w3-light-grey w3-center w3-bar header-main">
+        <a href="./history.html">
+            <button class="w3-button w3-black w3-padding w3-large w3-margin-top w3-center"
+                title="Veamos su historia">Sigamos</button>
+        </a>
+    </div>
+    <!-- Parte de pie de página con enlaces a sitios externos -->
+    <footer class="w3-container w3-black w3-padding-small w3-center w3-opacity w3-margin-top">
+        <div class="w3-xlarge w3-padding-small">
+            <a href="https://www.tripadvisor.es/Attractions-g153339-Activities-Canada.html"
+                target="_blank" title="Más cosas para hacer"><i class="fa fa-plane w3-hover-opacity"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

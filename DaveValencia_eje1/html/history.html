@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos tomada de plantilla -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <!-- Familia de fuentes tomadas de Google Fonts y CloudFire -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icono en pestaña de navegador personalizado -->
+    <link rel="icon" href="../media/img/canada-flag-round-icon-16.png" type="image/x-icon">
+    <title>Historia</title>
+</head>
+
+<!-- Se aplican las etiquetas de HTML semántico para identificar mejor las secciones-->
+
+<body>
+    <script>
+        /* Función para poder usar el menú de navegación en pantallas pequeñas */
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <nav>
+        <!-- Barra de navegación para pantalla grandes -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
+                <a href="place.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espacio</a>
+                <a href="characters.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Personajes</a>
+                <a href="activities.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Actividades</a>
+                <a href="history.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Historia</a>
+                <a href="credits.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Créditos</a>
+            </div>
+
+            <!-- Barra de navegación para pantalla pequeñas -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="place.html" class="w3-bar-item w3-button w3-padding-large">Espacio</a>
+                <a href="characters.html" class="w3-bar-item w3-button w3-padding-large">Personajes</a>
+                <a href="activities.html" class="w3-bar-item w3-button w3-padding-large">Actividades</a>
+                <a href="history.html" class="w3-bar-item w3-button w3-padding-large">Historia</a>
+                <a href="credits.html" class="w3-bar-item w3-button w3-padding-large">Créditos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Submenú para ver los elementos internos de la página -->
+    <div class="w3-main w3-container w3-center w3-red w3-card w3-bar">
+        <h2 class="w3-large">Temas</h2>
+        <ul class="w3-ul w3-transparent">
+            <a href="#First_Nations" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Primeras Naciones</li>
+            </a>
+            <a href="#European_Contact" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Contacto con Europa</li>
+            </a>
+            <a href="#British_Canada" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Dominio británico</li>
+            </a>
+            <a href="#Canadian_Confederation" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Confederación canadiense</li>
+            </a>
+            <a href="#Modern_Canada" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Canadá Moderno</li>
+            </a>
+        </ul>
+    </div>
+    <!-- Formato contenido foto izquierda y encima en pantallas pequeñas-->
+    <div id="First_Nations" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-third">
+                <figure>
+                    <a href="https://es.wikipedia.org/wiki/Alexander_Graham_Bell" target="_blank"
+                        title="Clic para saber más"><img class="w3-image"
+                            src="../media/img/800px-Langs_N.Amer_espanol.png" alt="Alexander Graham Bell" width="250px">
+                    </a>
+                </figure>
+            </div>
+            <div class="w3-twothird">
+                <h1>Primeras Naciones</h1>
+                <h5 class="w3-padding-32 w3-justify">Los primeros canadienses fueron los antepasados de los amerindios
+                    que llegaron atravesando el estrecho de Bering antes del 20 000 a. C., durante las últimas
+                    glaciaciones del Pleistoceno, hacia el 8000 a. C. las tribus indias ya se repartían el territorio
+                    del Canadá, en el nordeste micmac, beothuk, cree y ojibwa, al sur iroqueses y hurones, al oeste de
+                    los Grandes Lagos los indios de las llanuras y en el oeste tlingit, kwakiutl, haida, tsimshiam y
+                    salish.</h5>
+                <p class="w3-padding-small w3-justify">Hacia aproximadamente el 6000 a. C. atravesaron el estrecho de
+                    Bering los antepasados de los que formarían la cultura Dorset que fue sustituida por el Thule
+                    (pueblo) hacia el año 1000 que dio como resultado a los actuales inuit. Cristóbal Colón y sus
+                    hombres no fueron los primeros europeos en pisar América, pues hacia el año 1000 un marinero
+                    Vikingo, Bjarni Herjólfsson avistó Norteamérica y tras informar de esa tierra desconocida atrajo a
+                    muchos vikingos liderados por el hijo de Erik el Rojo, Leif Eriksson, que iniciaron una Colonización
+                    vikinga en América que fue abandonada hacia el 1010 por los combates contra nativos hostiles.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto derecha y abajo en pantallas pequeñas -->
+    <div id="European_Contact" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Contacto con los europeos</h1>
+                <h5 class="w3-padding-32">La parte oriental del actual territorio de Canadá fue descrita por primera vez
+                    en 1498 por el veneciano Juan Sebastián Cabot. Poco después de dicha expedición empezaron a llegar
+                    al continente americano los primeros pescadores portugueses, ingleses, franceses y españoles que se
+                    habían enterado de la abundancia de bacalao en los bancos de Terranova gracias a la expedición de
+                    Cabot, y explorado por Jacques Cartier de 1534 a 1535, el cual navegó por el golfo de San Lorenzo,
+                    visitó los emplazamientos de las futuras Quebec y Montreal, conoció las tierras y aguas de la región
+                    por los nativos y tomó de ellos la palabra Canadá, palabra algoquina que significaba aldea. En 1545,
+                    los libros y mapas creados por los primeros exploradores europeos comienzan a referirse a esta
+                    región como Canadá. Los exploradores ingleses Martin Frobisher en 1576 y Henry Hudson en 1609-1610
+                    trataron de encontrar un paso hacia Asia.</h5>
+            </div>
+            <div class="w3-third">
+                <figure>
+                    <a href="https://en.wikipedia.org/wiki/Jacques_Cartier" target="_blank"
+                        title="Clic para saber más"><img class="w3-image"
+                            src="../media/img/Jacques_Cartier_1934.jpg" alt="Jacques Cartier Estampilla"
+                            width="200px">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto izquierda y encima en pantallas pequeñas-->
+    <div id="British_Canada" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-third">
+                <figure>
+                    <a href="https://es.wikipedia.org/wiki/Leyes_intolerables" target="_blank"
+                        title="Clic para saber más"><img class="w3-image" src="../media/img/Acta de Quebec.jpg"
+                            alt="Acta de Quebec de 1774" height="300px">
+                    </a>
+                </figure>
+            </div>
+            <div class="w3-twothird">
+                <h1>Dominio británico del Canadá</h1>
+                <h5 class="w3-padding-32 w3-justify">Tras la incorporación de Canadá, Gran Bretaña siguió una política
+                    de atracción de la población francesa, mayoritaria en la colonia.
+
+                    Y, así en 1774 se firmó el Quebec Act, que reconocía a los francocanadienses el libre ejercicio del
+                    culto católico y el derecho a gobernarse según sus propias leyes.
+
+                    Esto explica la escasa repercusión que tuvo en Canadá la sublevación de las colonias
+                    estadounidenses. El intento de revuelta fracasó ante los muros de Quebec (1775), al ser derrotadas
+                    las tropas de Montgomery.</h5>
+                <p class="w3-padding-small w3-justify">La independencia de EE UU. (1783), determinó la emigración a
+                    Canadá de numerosas familias americanas leales a Gran Bretaña, que se establecieron en la cuenca
+                    alta del San Lorenzo y alteraron la composición étnica del país.
+
+                    Ello obligó a dividir el territorio canadiense en dos provincias (Acta Constitucional 1791), Alto y
+                    Bajo Canadá, de mayoría británica y francesa, respectivamente, cada una con régimen parlamentario
+                    propio.
+
+                    cuándo se creó canadá
+                    Una nueva guerra entre Canadá y EE.UU. (1812-1814), unió momentáneamente a todas las provincias para
+                    rechazar la invasión. Después, la tensión entre el Gobierno británico y los colonos creció hasta
+                    desembocar en las rebeliones de 1837-38, localizadas en el Alto Canadá (Mackenzie) y Bajo Canadá
+                    (Papineau).
+
+                    El movimiento, si bien fue reprimido, mostró al Gobierno británico la conveniencia de una reforma de
+                    carácter democrático v, siguiendo los consejos de lord Durham, promulgó una nueva Constitución (Act
+                    of Union, 1840-1841), reuniendo en una sola provincia el Alto y el Bajo Canadá. La importancia del
+                    gobernador, de nombramiento británico, quedó disminuida y los ministros aumentaron su poder al
+                    serles concedida responsabilidad en la Asamblea legislativa (1848).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto derecha y abajo en pantallas pequeñas -->
+    <div id="Canadian_Confederation" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Confederación canadiense</h1>
+                <h5 class="w3-padding-32">En 1867, se aprobó la Confederación canadiense, que agrupó, en su origen, las
+                    provincias de Ontario (Alto Canadá), Quebec (Bajo Canadá). New Brunswick y Nova Scotia.
+
+                    Después se incorporaron los demás territorios, conforme avanzaba la colonización del oeste
+                    canadiense.
+
+                    En 1869, se compraron las tierras de la Compañía de la Bahía de Hudson y en 1870 Manitoba entró en
+                    la Confederación. British Columbia (1871), Prince Edvvard Island (1873), Alberta y Saskatchewan
+                    (ambas en 1905), completaron la expansión hacia el oeste, favorecida por la construcción de
+                    ferrocarriles transcontinentales (Canadian Pacific, Canadian National).
+
+                    El gobierno de la Confederación fue ejercido alternativamente por conservadores y liberales. Los
+                    primeros ocuparon el poder desde 1867 hasta 1896, en que un conflicto con la Iglesia católica
+                    (libertad de enseñanza) motivó su caída.
+
+                    El partido liberal, dirigido por Wilfrid Laurier, intentó en su primer mandato (1896-1911) una
+                    política autonomista. Durante la Primera Guerra Mundial, Canadá participó con 600.000 soldados junto
+                    a los aliados, lo que le permitió estar presente en las negociaciones de Versalles.</h5>
+            </div>
+            <div class="w3-third">
+                <figure>
+                    <a href="https://www.thecanadianencyclopedia.ca/en/article/confederation" target="_blank"
+                        title="Clic para saber más"><img class="w3-image" src="../media/img/Escudo_Confederación.jpg"
+                            alt="Confederación canadiense escudo" width="200px">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Formato contenido foto izquierda y encima en pantallas pequeñas-->
+    <div id="Modern_Canada" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-third">
+                <figure>
+                    <a href="https://www.lasegundaguerra.com/viewtopic.php?t=856" target="_blank"
+                        title="Clic para saber más"><img class="w3-image" src="../media/img/Let'sGoCanada.jpg"
+                            alt="Póster Canadia 2da Guerra Mundial" height="300px">
+                    </a>
+                </figure>
+            </div>
+            <div class="w3-twothird">
+                <h1>Canadá Moderno</h1>
+                <h5 class="w3-padding-32 w3-justify">Durante la Segunda Guerra Mundial, Canadá movilizó 900.000 hombres,
+                    y al finalizar la guerra 350.000 soldados se hallaban en los diversos frentes europeos.
+
+                    El partido liberal continuó en el poder hasta 1957, y durante su mandato se firmó un acuerdo con
+                    EE.UU para la defensa de las zonas árticas (1946).
+
+                    canadá segunda guerra mundial historia
+                    Canadá ingresó en la Organización de las Naciones Unidas (ONU) en 1945 y en la Organización del
+                    Tratado del Atlántico Norte (OTAN) en 1949 como miembro fundador.
+
+                    En 1949 Gran Bretaña cedió la isla de Tertanova a Canadá. A la muerte de Mackenzie King (1950) fue
+                    nombrado primer ministro el liberal Saint-Laurent.
+
+                    En 1957, tras una crisis económica, los conservadores progresistas ganaron las elecciones y el jefe
+                    del partido conservador, J. Diefenbaker, ocupó la jefatura del Gobierno hasta 1963, en que fue
+                    derribado por su negativa a equipar las tuerzas armadas canadienses con armas atómicas.
+
+                    Tras las elecciones de abril de 1963, el jefe del partido liberal, Lester Pearson, tormo un Gobierno
+                    de minoría. Poco tiempo después tuvo lugar el acuerdo nuclear con EE.UU, (aceptación de armamento
+                    atómico).
+
+                    presidentes de Canadá
+                    En la década de los años 60 del siglo XX, cobró auge el separatismo de la minoría francófona. En
+                    junio de 1968 el partido liberal de Pierre Elliott Trudeau logró la mayoría absoluta, pero el clima
+                    político se enrareció al ser asesinado en 1970, el ministro de Trabajo, Laporte, por miembros del
+                    Frente de Liberación de Quebec.
+
+                    Tras un año de ejecutivo conservador, en 1980 Trudeau volvió al poder, y se vio reforzado después de
+                    que el referéndum de Quebec para decidir la negociación de una “soberanía asociada” fuera adverso a
+                    los nacionalistas.
+
+                    Asimismo, logró aprobar la primera Constitución elaborada en Canadá (diciembre 1981), que aunque fue
+                    vetada por el Gobierno de Quebec fue proclamada en Otawa por Isabel II (abril 1982).
+
+                    Los efectos de la crisis económica provocaron una rápida pérdida de popularidad de Tiudeau, quien
+                    fue sustituido por un Gobierno del partido progresista conservador encabezado por Brian Mulroney.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-light-grey w3-center w3-bar header-main">
+        <a href="./credits.html">
+            <button class="w3-button w3-black w3-padding w3-large w3-margin-top w3-center"
+                title="Créditos">Para finalizar</button>
+        </a>
+    </div>
+
+    <!-- Parte de pie de página con enlaces a sitios externos -->
+    <footer class="w3-container w3-black w3-padding-small w3-center w3-opacity w3-margin-top">
+        <div class="w3-xlarge w3-padding-small">
+            <a href="https://www.ivoox.com/historia-canada-01-la-multiculturalidad-canada-audios-mp3_rf_4055490_1.html"
+                target="_blank" title="Podcast de interés"><i class="fa fa-play w3-hover-opacity"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

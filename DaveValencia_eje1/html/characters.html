@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos tomada de plantilla -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <!-- Familia de fuentes tomadas de Google Fonts y CloudFire -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icono en pestaña de navegador personalizado -->
+    <link rel="icon" href="../media/img/canada-flag-round-icon-16.png" type="image/x-icon">
+    <title>Personajes</title>
+</head>
+
+<!-- Se aplican las etiquetas de HTML semántico para identificar mejor las secciones-->
+
+<body>
+    <script>
+        /* Función para poder usar el menú de navegación en pantallas pequeñas */
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <nav>
+        <!-- Barra de navegación para pantalla grandes -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
+                <a href="place.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espacio</a>
+                <a href="characters.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Personajes</a>
+                <a href="activities.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Actividades</a>
+                <a href="history.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Historia</a>
+                <a href="credits.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Créditos</a>
+            </div>
+
+            <!-- Barra de navegación para pantalla pequeñas -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="place.html" class="w3-bar-item w3-button w3-padding-large">Espacio</a>
+                <a href="characters.html" class="w3-bar-item w3-button w3-padding-large">Personajes</a>
+                <a href="activities.html" class="w3-bar-item w3-button w3-padding-large">Actividades</a>
+                <a href="history.html" class="w3-bar-item w3-button w3-padding-large">Historia</a>
+                <a href="credits.html" class="w3-bar-item w3-button w3-padding-large">Créditos</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Submenú para ver los elementos internos de la página -->
+    <div class="w3-main w3-container w3-center w3-red w3-card w3-bar">
+        <h2 class="w3-large">Temas</h2>
+        <ul class="w3-ul w3-transparent">
+            <a href="#Alexander_Graham_Bell" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Alexander Graham Bell</li>
+            </a>
+            <a href="#Frederick_Grant" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Frederick Banting</li>
+            </a>
+            <a href="#James_Cameron" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">James Cameron</li>
+            </a>
+            <a href="#Jim_Carrey" target="_self">
+                <li class="w3-border w3-border-red w3-hover-white">Jim Carrey</li>
+            </a>
+        </ul>
+    </div>
+    <!-- Formato contenido foto izquierda y encima en pantallas pequeñas-->
+    <div id="Alexander_Graham_Bell" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-third">
+                <figure>
+                    <a href="https://es.wikipedia.org/wiki/Alexander_Graham_Bell" target="_blank"
+                        title="Clic para saber más"><img class="w3-image" src="../media/img/Alexander_Graham_Bell.jpg"
+                            alt="Alexander Graham Bell" width="250px">
+                    </a>
+                </figure>
+            </div>
+            <div class="w3-twothird">
+                <h1>Alexander Graham Bell</h1>
+                <h5 class="w3-padding-32 w3-justify">Tuvo gran marca en la historia de Canadá ya que fue un inventor muy
+                    reconocido
+                    lo cual realizo como su mayor invento el <strong>teléfono</strong> trabajando junto a una escuela de
+                    sordos para
+                    poder presentar una maquina la cual pudiera transmitir sonido mediante electricidad y así
+                    reconocerse como un famoso en el medio científico de Canadá.</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto derecha y abajo en pantallas pequeñas -->
+    <div id="Frederick_Grant" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Frederick Banting</h1>
+                <h5 class="w3-padding-32">Reconocido como unos de los científicos el cual descubrió un medicamento muy
+                    efectivo y reconocida por todo el mundo la <strong>insulina</strong> y así salvando a millones de
+                    vidas.
+                    Actualmente este método de medicamento recorre cada espacio de nuestro mundo haciéndose cada vez más
+                    famoso por la cura de una enfermedad muy complicada.</h5>
+            </div>
+            <div class="w3-third">
+                <figure>
+                    <a href="https://es.wikipedia.org/wiki/Frederick_Grant_Banting" target="_blank"
+                        title="Clic para saber más"><img class="w3-image"
+                            src="../media/img/Frederick_Banting_Time_Magazine.jpg" alt="Frederick Banting Revista Time"
+                            width="200px">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto izquierda y encima en pantallas pequeñas-->
+    <div id="James_Cameron" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-third">
+                <figure>
+                    <a href="https://www.imdb.com/name/nm0000116/bio?ref_=nm_ov_bio_sm" target="_blank"
+                        title="Clic para saber más"><img class="w3-image" src="../media/img/James_Cameron.jpg"
+                            alt="James_Cameron" height="300px">
+                    </a>
+                </figure>
+            </div>
+            <div class="w3-twothird">
+                <h1>James Cameron</h1>
+                <h5 class="w3-padding-32 w3-justify">Este personaje fue reconocido como <strong>el mayor
+                        cineasta</strong> del cine contemporáneo y muchos los conocen por ser el director de grandes
+                    películas como el Titanic. Así mismo
+                    de Terminator, ganando muchos galardones, unas de las películas más reconocida fue el Titanic por
+                    la cual ganó un <strong>Óscar</strong> a la mejor película y director de esa época causando así una
+                    marca muy grande
+                    en Canadá.</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formato contenido foto derecha y abajo en pantallas pequeñas -->
+    <div id="Jim_Carrey" class="w3-row-padding w3-light-grey w3-padding-32 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Jim Carrey</h1>
+                <h5 class="w3-padding-32">Uno de los <strong>actores</strong> más reconocidos de Hollywood
+                    dominando el cine cómico durante los años 90 con una gran variedad de películas como la
+                    Máscara, Ace ventura y Dos tontos muy tontos; causando también una gran revolución por
+                    la parte del mejor actor cómico de la época</h5>
+            </div>
+            <div class="w3-third">
+                <figure>
+                    <a href="https://www.imdb.com/name/nm0000120/bio?ref_=nm_ov_bio_sm" target="_blank"
+                        title="Clic para saber más"><img class="w3-image" src="../media/img/Jim_Carrey.jpg"
+                            alt="Jim Carrey" width="200px">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container w3-light-grey w3-center w3-bar header-main">
+        <a href="./activities.html">
+            <button class="w3-button w3-black w3-padding w3-large w3-margin-top w3-center"
+                title="Actividades">Sigamos</button>
+        </a>
+    </div>
+    <!-- Parte de pie de página con enlaces a sitios externos -->
+    <footer class="w3-container w3-black w3-padding-small w3-center w3-opacity w3-margin-top">
+        <div class="w3-xlarge w3-padding-small">
+            <a href="https://www.cls-idiomas.com/personajes-famosos-canada#:~:text=PERSONAJES%20FAMOSOS%20DE%20CANAD%C3%81%20ACTUALES%201%20Justin%20Bieber%2C,divertido%20de%20esta%20lista%21.%20...%20Mas%20cosas...%20" target="_blank" title="Más personajes famosos"><i class="fa fa-info w3-hover-opacity"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos tomada de plantilla -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <!-- Familia de fuentes tomadas de Google Fonts y CloudFire -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icono en pestaña de navegador personalizado -->
+    <link rel="icon" href="../media/img/canada-flag-round-icon-16.png" type="image/x-icon">
+    <title>Créditos y menú de navegación</title>
+</head>
+
+<!-- Se aplican las etiquetas de HTML semántico para identificar mejor las secciones-->
+
+<body>
+    <script>
+        /* Función para poder usar el menú de navegación en pantallas pequeñas */
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <nav>
+        <!-- Barra de navegación para pantalla grandes -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
+                <a href="place.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espacio</a>
+                <a href="characters.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Personajes</a>
+                <a href="activities.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Actividades</a>
+                <a href="history.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Historia</a>
+                <a href="credits.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Créditos</a>
+            </div>
+
+            <!-- Barra de navegación para pantalla pequeñas -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="place.html" class="w3-bar-item w3-button w3-padding-large">Espacio</a>
+                <a href="characters.html" class="w3-bar-item w3-button w3-padding-large">Personajes</a>
+                <a href="activities.html" class="w3-bar-item w3-button w3-padding-large">Actividades</a>
+                <a href="history.html" class="w3-bar-item w3-button w3-padding-large">Historia</a>
+                <a href="credits.html" class="w3-bar-item w3-button w3-padding-large">Créditos</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Header funciona para poner el mapa de navegación en credits.html -->
+    <header class="w3-container w3-white w3-center header-credits w3-margin-top">
+        <h2 class="w3-large">Mapa de navegación</h2>
+        <figure>
+            <img class="w3-image" src="../media/img/NavMap.jpg" alt="Mapa de navegación">
+        </figure>
+    </header>
+    <!-- Lista de infografía usada con enlaces a los recursos originales -->
+    <div class="w3-main w3-container w3-center w3-white w3-card w3-bar">
+        <h2 class="w3-large">Créditos</h2>
+        <ul class="w3-ul w3-transparent">
+            <a href="https://img.freepik.com/free-vector/flat-canada-day-illustration_23-2148538149.jpg?size=338&ext=jpg"
+                target="_blank">
+                <li class="w3-border w3-border-red">Póster día del Canadá</li>
+            </a>
+            <a href="https://www.countryflags.com/en/canada-flag-icon.html" target="_blank">
+                <li class="w3-border  w3-border-red">Icono página</li>
+            </a>
+            <a href="https://www.embedgooglemap.net/" target="_blank">
+                <li class="w3-border w3-border-red">Mapa</li>
+            </a>
+            <a href="https://en.wikipedia.org/wiki/Alexander_Graham_Bell#/media/File:Alexander_Graham_Bell.jpg"
+                target="_blank">
+                <li class="w3-border w3-border-red">Alexander Graham Bell</li>
+            </a>
+            <a href="https://historyatkingston.files.wordpress.com/2015/11/frederick-banting-time-magazine.jpg"
+                target="_blank">
+                <li class="w3-border w3-border-red">Frederick Banting</li>
+            </a>
+            <a href="https://celebrityinsider.org/wp-content/uploads/2017/11/james_cameron.jpg" target="_blank">
+                <li class="w3-border w3-border-red">James Cameron</li>
+            </a>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/8/8b/Jim_Carrey_2008.jpg" target="_blank">
+                <li class="w3-border w3-border-red">Jim Carrey</li>
+            </a>
+            <a href="https://farm8.staticflickr.com/7115/7604805398_0bf67154a0_b.jpg" target="_blank">
+                <li class="w3-border w3-border-red">Torre CN</li>
+            </a>
+            <a href="https://bakenfelt.files.wordpress.com/2014/04/pancakes.jpg?w=960" target="_blank">
+                <li class="w3-border w3-border-red">Pancakes</li>
+            </a>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Niagara_Roux_de_Rochelle.jpg/320px-Niagara_Roux_de_Rochelle.jpg"
+                target="_blank">
+                <li class="w3-border w3-border-red">Cataratas del Niagara</li>
+            </a>
+            <a href="https://www.chatelaine.com/wp-content/uploads/2017/05/Poutine_flickr.jpg" target="_blank">
+                <li class="w3-border w3-border-red">Poutine</li>
+            </a>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Langs_N.Amer_espanol.png/800px-Langs_N.Amer_espanol.png"
+                target="_blank">
+                <li class="w3-border w3-border-red">Primeras Naciones</li>
+            </a>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/2/26/Jacques_Cartier_1934_issue-3c.jpg"
+                target="_blank">
+                <li class="w3-border w3-border-red">Jacques Cartier</li>
+            </a>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/d/dc/Qu%C3%A9bec_Act%2C_1774.jpg" target="_blank">
+                <li class="w3-border w3-border-red">Acta de Quebec de 1774</li>
+            </a>
+            <a href="https://tce-live2.s3.amazonaws.com/media/media/cc2232fe-1863-4501-9f67-4d13492a75f4.jpg"
+                target="_blank">
+                <li class="w3-border w3-border-red">Escudo Confederación Canadiense</li>
+            </a>
+            <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Let%27sGoCanada.jpg/275px-Let%27sGoCanada.jpg"
+                target="_blank">
+                <li class="w3-border w3-border-red">Póster Canadá 2da Guerra Mundial</li>
+            </a>
+        </ul>
+    </div>
+    <!-- Parte de pie de página con enlaces a sitios oficiales -->
+    <footer class="w3-container w3-black w3-padding-small w3-center w3-opacity w3-margin-top">
+        <div class="w3-xlarge w3-padding-small">
+            <a href="https://github.com/dsvalencias/GraficaInteractiva" target="_blank"
+                title="Código fuente de la página"><i class="fa fa-github w3-hover-opacity"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

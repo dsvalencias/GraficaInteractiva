@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos tomada de plantilla -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <!-- Familia de fuentes tomadas de Google Fonts y CloudFire -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icono en pestaña de navegador personalizado -->
+    <link rel="icon" href="../media/img/canada-flag-round-icon-16.png" type="image/x-icon">
+    <title>Inicio</title>
+</head>
+
+<!-- Se aplican las etiquetas de HTML semántico para identificar mejor las secciones-->
+
+<body>
+    <script>
+        /* Función para poder usar el menú de navegación en pantallas pequeñas */
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <nav>
+        <!-- Barra de navegación para pantalla grandes -->
+        <div class="w3-top">
+            <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+                    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                        class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Inicio</a>
+                <a href="place.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Espacio</a>
+                <a href="characters.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Personajes</a>
+                <a href="activities.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Actividades</a>
+                <a href="history.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Historia</a>
+                <a href="credits.html"
+                    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Créditos</a>
+            </div>
+
+            <!-- Barra de navegación para pantalla pequeñas -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+                <a href="place.html" class="w3-bar-item w3-button w3-padding-large">Espacio</a>
+                <a href="characters.html" class="w3-bar-item w3-button w3-padding-large">Personajes</a>
+                <a href="activities.html" class="w3-bar-item w3-button w3-padding-large">Actividades</a>
+                <a href="history.html" class="w3-bar-item w3-button w3-padding-large">Historia</a>
+                <a href="credits.html" class="w3-bar-item w3-button w3-padding-large">Créditos</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Parte cabecera de index.html -->
+    <header class="w3-container w3-red w3-center w3-bar header-main">
+        <h1 class="w3-jumbo">CANADÁ</h1>
+        <p class="w3-large">Una visita guiada</p>
+        <figure>
+            <a href="https://www.timeanddate.com/holidays/canada/canada-day" target="_blank" title="Aprende más de Canadá"><img
+                    class="w3-image w3-tooltip" src="../media/img/Canada_Flag_Day.jpg" alt="Día del Canadá"></a>
+        </figure>
+
+        <a href="./place.html">
+            <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" title="Vamos a ver el lugar">Comencemos</button>
+        </a>
+
+    </header>
+    <!-- Parte de pie de página con enlaces a sitios oficiales -->
+    <footer class="w3-container w3-padding-small w3-center w3-opacity w3-margin-top">
+        <div class="w3-xlarge w3-padding-small">
+            <a href="https://www.worldatlas.com/na/ca/where-is-canada.html" target="_blank" title="Información adicional"><i
+                class="fa fa-info w3-hover-opacity"></i></a>
+                <a href="https://globalnews.ca/tag/facebook-canada/" target="_blank" title="Noticias de Canadá"><i class="fa fa-newspaper-o w3-hover-opacity"></i></a>
+                <a href="https://es.wikipedia.org/wiki/Canad%C3%A1" target="_blank" title="Wiki de Canadá"><i class="fa fa-wikipedia-w w3-hover-opacity"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>
