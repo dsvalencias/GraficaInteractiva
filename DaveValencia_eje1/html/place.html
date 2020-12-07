@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hoja de estilos tomada de plantilla -->
-    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/w3.css">
+    <!-- Hoja de estilos para el mapa interactivo -->
+    <link rel="stylesheet" href="../css/interactive-map.css">
     <!-- Familia de fuentes tomadas de Google Fonts y CloudFire -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Icono en pestaña de navegador personalizado -->
     <link rel="icon" href="../media/img/canada-flag-round-icon-16.png" type="image/x-icon">
+    <!-- Librerías externas para usar el mapa interactivo -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="interactive-map.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Código interno para manejar los eventos del mapa-->
+    <script src="../js/interactive-map.js"></script>
     <title>Espacio y ubicación</title>
 </head>
 
@@ -66,20 +75,10 @@
     <div class="w3-row-padding w3-padding-64-top w3-container">
         <h1 class="w3-jumbo w3-center">Espacio y ubicación</h1>
         <div class="w3-content">
-            <div class="w3-twothird">
-                <!-- Código de mapa generado automáticamente de: https://www.embedgooglemap.net/ -->
-                <div class="mapouter">
-                    <div class="gmap_canvas w3-center">
-                        <iframe width="600" height="500" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=canada&t=&z=7&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
             <!-- Texto ajustado para leerse de forma cómoda en pantallas medianas usando padding -->
             <div class="w3-third w3-center w3-padding-128-top w3-padding-32-sides">
-                <p class="w3-text-grey w3-justify">Canadá es el país norteamericano que se extiende desde los Estados
+                <p class="w3-text-grey w3-justify w3-padding-32-top">Canadá es el país norteamericano que se extiende
+                    desde los Estados
                     Unidos en
                     el sur hasta el círculo polar ártico en el norte. Las ciudades principales incluyen la enorme
                     Toronto, Vancouver, el centro cinematográfico de la costa oeste, las ciudades de habla francesa
@@ -93,7 +92,163 @@
                         title="Personas famosas del país">Sigamos</button>
                 </a>
             </div>
+            <!-- Cambio de mapa usado de Google Maps a HTML, CSS y JS -->
+            <div class="w3-twothird">
+                <!-- Uso de varias librerías para utilizar mapas dinámicos -->
+                <div class="container">
+                    <!-- Creación de canvas del mapa -->
+                    <div class="row ct-u-padding-bottom-40">
+                        <div class="col-lg-1 col-lg-push-1 col-md-1 col-md-push-1">
+                            <!-- Uso de una imagen local como lienzo del mapa -->
+                            <div class="ct-map">
+                                <img alt="Map" class="ct-map__image"
+                                    src="../media/img/infographics-canada-map-flat-design-colors-blue-background-blank-infographics-canada-map-flat-design-colors-blue-background-blank-173774467.jpg">
+                                <!-- Creación de botón y se dispone su posición usando interactive-map.css -->
+                                <!-- Funcionalidad para seleccionar leyenda y cerrarla en interactive-map.js -->
+                                <!-- Ubicar posición botón-->
+                                <div class="ct-city stone">
+                                    <!-- Acceder a recurso botón en línea -->
+                                    <button class="ct-city__button" type="button" tabindex="0"><img alt="Map Open Icon"
+                                            class="ct-plus" src="https://www.solodev.com/assets/map/map-plus.png"
+                                            data-pin-nopin="true"><img alt="Map Close Icon" class="ct-close"
+                                            src="https://www.solodev.com/assets/map/map-close.png"
+                                            data-pin-nopin="true"><span class="ct-city__name">Ottawa</span></button>
+                                    <!-- Ubicar información leyenda -->
+                                    <div class="ct-popup">
+                                        <div class="inner">
+                                            <span class="ct-popup__name">Capital</span>
+                                            <p class="ct-popup__content">
+                                                Fundada en 1826<br />
+                                                Población 2'000.000<br />
+                                                Esta ciudad es la capital para evitar tensiones entre el Canadá
+                                                británico y los Québécois.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ubicar posición botón-->
+                                <div class="ct-city quebec">
+                                    <!-- Acceder a recurso botón en línea -->
+                                    <button class="ct-city__button" type="button" tabindex="0"><img alt="Map Open Icon"
+                                            class="ct-plus" src="https://www.solodev.com/assets/map/map-plus.png"
+                                            data-pin-nopin="true"><img alt="Map Close Icon" class="ct-close"
+                                            src="https://www.solodev.com/assets/map/map-close.png"
+                                            data-pin-nopin="true"><span class="ct-city__name">Quebec</span></button>
+                                    <!-- Ubicar información leyenda -->
+                                    <div class="ct-popup">
+                                        <div class="inner">
+                                            <span class="ct-popup__name">Québécois</span>
+                                            <p class="ct-popup__content">
+                                                Parte francófona de Canadá<br />
+                                                Zona prospera y culturalmente rica,<br /> con una gran historia y un
+                                                gran sentido de pertenencia
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ubicar posición botón-->
+                                <div class="ct-city inuktitut">
+                                    <!-- Acceder a recurso botón en línea -->
+                                    <button class="ct-city__button" type="button" tabindex="0"><img alt="Map Open Icon"
+                                            class="ct-plus" src="https://www.solodev.com/assets/map/map-plus.png"
+                                            data-pin-nopin="true"><img alt="Map Close Icon" class="ct-close"
+                                            src="https://www.solodev.com/assets/map/map-close.png"
+                                            data-pin-nopin="true"><span class="ct-city__name">Inuktitut</span></button>
+                                    <!-- Ubicar información leyenda -->
+                                    <div class="ct-popup">
+                                        <div class="inner">
+                                            <span class="ct-popup__name">Escritura</span>
+                                            <p class="ct-popup__content">
+                                                Abugida creado por evangelizadores europeos hecho para traducir la
+                                                biblia a las poblaciones aborigenes del Canadá
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ubicar posición botón-->
+                                <div class="ct-city orlando">
+                                    <!-- Acceder a recurso botón en línea -->
+                                    <button class="ct-city__button" type="button" tabindex="0"><img alt="Map Open Icon"
+                                            class="ct-plus" src="https://www.solodev.com/assets/map/map-plus.png"
+                                            data-pin-nopin="true"><img alt="Map Close Icon" class="ct-close"
+                                            src="https://www.solodev.com/assets/map/map-close.png"
+                                            data-pin-nopin="true"><span class="ct-city__name">Toronto</span></button>
+                                    <!-- Ubicar información leyenda -->
+                                    <div class="ct-popup">
+                                        <div class="inner">
+                                            <span class="ct-popup__name">La más grande</span>
+                                            <p class="ct-popup__content">
+                                                Con 6 millones de habitantes, es la ciudad más grande además una de las
+                                                más conectadas a los EE.UU.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ubicar posición botón-->
+                                <div class="ct-city orlando2">
+                                    <!-- Acceder a recurso botón en línea -->
+                                    <button class="ct-city__button" type="button" tabindex="0"><img alt="Map Open Icon"
+                                            class="ct-plus" src="https://www.solodev.com/assets/map/map-plus.png"
+                                            data-pin-nopin="true"><img alt="Map Close Icon" class="ct-close"
+                                            src="https://www.solodev.com/assets/map/map-close.png"><span
+                                            class="ct-city__name">Minería</span></button>
+                                    <!-- Ubicar información leyenda -->
+                                    <div class="ct-popup">
+                                        <div class="inner">
+                                            <span class="ct-popup__name">Riqueza</span>
+                                            <p class="ct-popup__content">
+                                                Esta región concentra una gran cantidad de petróleo y minerales que se
+                                                aprovecha para su exportación e industria.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ubicar posición botón-->
+                                <div class="ct-city vancouver">
+                                    <!-- Acceder a recurso botón en línea -->
+                                    <button class="ct-city__button" type="button" tabindex="0"><img alt="Map Open Icon"
+                                            class="ct-plus" src="https://www.solodev.com/assets/map/map-plus.png"
+                                            data-pin-nopin="true"><img alt="Map Close Icon" class="ct-close"
+                                            src="https://www.solodev.com/assets/map/map-close.png"
+                                            data-pin-nopin="true"><span class="ct-city__name">Vancouver</span></button>
+                                    <!-- Ubicar información leyenda -->
+                                    <div class="ct-popup">
+                                        <div class="inner">
+                                            <span class="ct-popup__name">Inflación</span>
+                                            <p class="ct-popup__content">
+                                                Esta ciudad subsiste de los intercambios estudiantiles haciendo que sea
+                                                una de las más caras para vivir en todo el mundo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ubicar posición botón-->
+                                <div class="ct-city erik">
+                                    <!-- Acceder a recurso botón en línea -->
+                                    <button class="ct-city__button" type="button" tabindex="0"><img alt="Map Open Icon"
+                                            class="ct-plus" src="https://www.solodev.com/assets/map/map-plus.png"
+                                            data-pin-nopin="true"><img alt="Map Close Icon" class="ct-close"
+                                            src="https://www.solodev.com/assets/map/map-close.png"
+                                            data-pin-nopin="true"><span
+                                            class="ct-city__name">Leif<br>Erikson</span></button>
+                                    <div class="ct-popup">
+                                        <div class="inner">
+                                            <span class="ct-popup__name">1er europeo</span>
+                                            <p class="ct-popup__content">
+                                                Se registra que él fue el primer explorador europeo en llegar al
+                                                continente americano en el año 1000 DC
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+    </div>
     </div>
 
     <!-- Parte de pie de página con enlaces a sitios oficiales -->

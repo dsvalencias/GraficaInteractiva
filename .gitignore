@@ -55,3 +55,8 @@ dkms.conf
 .vscode/
 *.log
 *.json
+
+#All compressed files
+*.zip
+*.rar
+*.7z
